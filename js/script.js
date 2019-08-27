@@ -40,15 +40,15 @@
       console.log(guest);
       console.log(attending);
 
-      var dataString = '&entry.1068564038=' + name + '&entry.352472512=' + email + '&entry.1150838879=' + guest + '&entry.66493311=' + attending;
+      var dataString = '&entry.341182170=' + name + '&entry.963706431=' + email + '&entry.1810834965=' + guest + '&entry.1880377774=' + attending;
       var form = $(this);
       var str = form.serialize();
       function sent(){
-        $('#div_' + type).html("<div id='form_send_message'>Thank you :)</div>", 1500);
+        $('#div_' + type).html("<div id='form_send_message'>Thank you! :)</div>", 1500);
       }
       $.ajax({
         type: "POST",
-        url: "https://docs.google.com/forms/d/1OCiSMSdit8QgxlhWjO9y9MmtFgpLdo52xf7UaCfY_ng/formResponse",
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSd2mYCmR6623GWvkTV3MJoF7rUf9mSw6XJppwPgnubdex057Q/formResponse",
         data: dataString,
         complete:sent
       });
